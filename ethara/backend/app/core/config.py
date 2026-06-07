@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "postgresql://ethara:ethara@localhost:5432/ethara"
 
     # CORS
-    ALLOWED_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000", "http://localhost:80"]
+    ALLOWED_ORIGINS: List[str] = ["http://localhost:5173", "http://localhost:3000", "https://etharproject.netlify.app/"]
 
     class Config:
         env_file = ".env"
